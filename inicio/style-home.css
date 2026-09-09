@@ -1,13 +1,31 @@
-.barraNav{
+body {
     background-color: #F7F7F7;
+    color: #333333;
 }
 
-.text{
-    display: flex;
-    justify-content: center;
+
+h2, h3, h4, h5, .navbar-brand, .card-title {
+    color: #8B4513;
 }
 
-p{
-    margin-right: 150px;
-    margin-left: 80px;
+.ver-productos-btn {
+    background-color: #2E8B57;
+    border-color: #2E8B57;
 }
+
+.precio {
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.seccion-nosotros {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
