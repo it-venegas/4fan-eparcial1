@@ -6,49 +6,155 @@
 
     <!-- Link con cdn de boostrap y css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="style-cat.css">
 
     <title>Huerto Hogar</title>
 </head>
+<body>
 
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
 
-            <!-- Nombre de la pagina en el Header -->
-            <img src="../img/logo.png" alt="Logo" height="74" class="d-inline-block align-text-top">
-            <a class="navbar-brand" href="../inicio/home.html">Huerto Hogar</a>
+                <!-- Nombre de la pagina en el Header -->
+                <img src="../img/logo.png" alt="Logo" height="74" class="d-inline-block align-text-top" href="#">
+                <a class="navbar-brand" href="../inicio/home.html">Huerto Hogar</a>
 
-            <!-- Boton de home encima del nombre de usuario -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Boton de home encima del nombre de usuario -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    
-                    <!-- Boton de home comun ("estas en esta pagina") -->
-                    <a class="btn-home nav-link active" aria-current="page" href="../inicio/home.html">Home</a>
-                    <!-- Boton para ir al catalogo ("NO estas en esta pagina") -->
-                    <a class="btn-catalogo nav-link" href="../catalogo/catalogo.html">Catalogo</a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        
+                        <!-- Boton de home comun ("NO estas en esta pagina") -->
+                        <a class="btn-home nav-link" aria-current="page" href="../inicio/home.html">Home</a>
+                        <!-- Boton de catalogo comun ("estas en esta pagina") -->
+                        <a class="btn-catalogo nav-link active" href="../catalogo/catalogo.html">Catalogo</a>
 
-                    <!-- Boton para ir al login ("NO estas en esta pagina") -->
-                    <a class="btn-login nav-link" href="../login/login.html">Login</a>
-                    <!-- Boton para ir al register ("NO estas en esta pagina)" -->
-                    <a class="btn-reg nav-link" href="../register/register.html">Registrate</a>
+                        <!-- Boton para ir al login ("NO estas en esta pagina") -->
+                        <a class="btn-login nav-link" href="../login/login.html">Login</a>
+                        <!-- Boton para ir al register ("NO estas en esta pagina)" -->
+                        <a class="btn-reg nav-link" href="../register/register.html">Registrate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+    <h2 class="txtCat mt-5 mb-3">Catalogo de Productos</h2>
+
+    <section class="sctCat">
+    <div class="container">
+    <div class="row">
+
+        <div class="col-md-3 mb-4 producto" data-cat="frutas">
+            <div class="card">
+                <img src="../img/manzana.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Manzanas fuji</h5>
+                    <p class="card-text">malla de 1 kilo</p>
+                    <p class="precio">$1.990</p>
+                    <button class="btn botonAgregar" onclick="agregar()">Agregar al carrito</button>
                 </div>
             </div>
         </div>
-    </nav>
-</header>
 
-<body>
+        <div class="col-md-3 mb-4 producto" data-cat="frutas">
+            <div class="card">
+                <img src="../img/platano.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Platanos</h5>
+                    <p class="card-text">kilo</p>
+                    <p class="precio">$1.290</p>
+                    <button class="btn botonAgregar" onclick="agregar()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-md-3 mb-4 producto" data-cat="verduras">
+            <div class="card">
+                <img src="../img/zanahorias.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Zanahorias</h5>
+                    <p class="card-text">malla de 1 kilo</p>
+                    <p class="precio">$990</p>
+                    <button class="btn botonAgregar" onclick="agregar()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4 producto" data-cat="verduras">
+            <div class="card">
+                <img src="../img/lechuga.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lechuga</h5>
+                    <p class="card-text">unidad</p>
+                    <p class="precio">$790</p>
+                    <button class="btn botonAgregar" onclick="agregar()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4 producto" data-cat="organicos">
+            <div class="card">
+                <img src="../img/tomate.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Tomates organicos</h5>
+                    <p class="card-text">kilo</p>
+                    <p class="precio">$2.490</p>
+                    <button class="btn botonAgregar" onclick="agregar()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4 producto" data-cat="organicos">
+            <div class="card">
+                <img src="../img/palta.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Paltas organicas</h5>
+                    <p class="card-text">malla de 1kg</p>
+                    <p class="precio">$3.290</p>
+                    <button class="btn botonAgregar" onclick="agregar()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4 producto" data-cat="verduras">
+            <div class="card">
+                <img src="../img/papa.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Papas</h5>
+                    <p class="card-text">malla de 2 kilos</p>
+                    <p class="precio">$1.590</p>
+                    <button class="btn botonAgregar" onclick="agregar()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4 producto" data-cat="frutas">
+            <div class="card">
+                <img src="../img/naranja.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Naranjas</h5>
+                    <p class="card-text">malla de 2 kilos</p>
+                    <p class="precio">$1.790</p>
+                    <button class="btn botonAgregar" onclick="agregar()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </section>
+
+    </body>
     
 
 
-    <!-- Link con cdn de boostrap y js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="functions-home.js"></script>
+    <script src="functions-cat.js"></script>
 </body>
 </html>

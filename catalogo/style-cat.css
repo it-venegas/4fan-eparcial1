@@ -1,0 +1,38 @@
+.txtCat{
+    text-align: center;
+    color: green;
+}
+
+.sctCat{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.card{
+    text-align: center;
+}
+
+.card img{
+    height: 150px;
+    width: 100%;
+}
+
+.precio{
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.botonAgregar{
+    background-color: green;
+    color: white;
+    width: 100%;
+}
+
+.botonAgregar:hover{
+    background-color: darkgreen;
+    color:white;
+}
+
+img{
+    object-fit:contain;
+}
