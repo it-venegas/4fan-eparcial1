@@ -1,0 +1,45 @@
+.txtCarrito{
+    text-align: center;
+    color: green;
+}
+
+.sctCarrito{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.imgCarrito{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.filaTitulo{
+    font-weight: bold;
+}
+
+.resumen{
+    text-align: right;
+    margin-top: 30px;
+}
+
+.total{
+    font-weight: bold;
+    color: darkgreen;
+    font-size: 20px;
+}
+
+.botonFinalizar{
+    background-color: green;
+    color: white;
+}
+
+.botonFinalizar:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+.botonQuitar{
+    background-color: red;
+    color: white;
+}
