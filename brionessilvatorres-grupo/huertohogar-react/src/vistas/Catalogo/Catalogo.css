@@ -1,0 +1,27 @@
+/* Estilos propios de la vista Catalogo */
+
+.txtCat {
+    text-align: center;
+    color: var(--verde-oscuro);
+}
+
+.sctCat {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.filtro {
+    border-radius: 999px;
+}
+
+/* Boton de la categoria que esta seleccionada */
+.filtro.activo {
+    background-color: var(--verde);
+    color: #ffffff;
+    border-color: var(--verde);
+}
+
+.conteoResultados {
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+}

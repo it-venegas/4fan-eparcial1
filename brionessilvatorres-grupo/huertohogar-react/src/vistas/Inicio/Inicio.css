@@ -1,0 +1,33 @@
+/* Estilos propios de la vista Inicio */
+
+.seccion-nosotros {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ver-productos-btn {
+    background-color: var(--verde);
+    border-color: var(--verde);
+}
+
+.ver-productos-btn:hover {
+    background-color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro);
+    color: #ffffff;
+}
+
+.text-secundario {
+    color: var(--texto-suave);
+}
+
+@media (max-width: 768px) {
+    .seccion-nosotros {
+        text-align: center;
+    }
+
+    .seccion-nosotros img {
+        margin-top: 20px;
+        max-width: 60%;
+    }
+}

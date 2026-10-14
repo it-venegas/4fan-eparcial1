@@ -1,0 +1,23 @@
+/* Estilos propios de los campos de formulario */
+
+.campoTexto .form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.campoTexto .textoAyuda {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+    font-weight: 400;
+}
+
+.campoTexto .form-control:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 0.2rem rgba(46, 139, 87, 0.2);
+}
+
+/* Bootstrap muestra el mensaje cuando el campo tiene is-invalid */
+.campoTexto .invalid-feedback {
+    display: block;
+}

@@ -1,0 +1,38 @@
+/* Estilos propios de la barra de navegacion */
+
+.barraNav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0dcd3;
+}
+
+.barraNav .navbar-brand {
+    font-family: var(--fuente-titulo);
+    color: var(--verde-oscuro);
+    font-weight: 700;
+}
+
+.barraNav .nav-link {
+    color: var(--texto);
+}
+
+.barraNav .nav-link:hover {
+    color: var(--verde-oscuro);
+}
+
+/* Enlace de la pagina en la que se esta navegando */
+.barraNav .nav-link.active {
+    color: var(--verde-oscuro);
+    font-weight: 600;
+    border-bottom: 2px solid var(--verde);
+}
+
+.datosSesion .nombreUsuario {
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+}
+
+@media (max-width: 991px) {
+    .datosSesion {
+        margin-top: 10px;
+    }
+}

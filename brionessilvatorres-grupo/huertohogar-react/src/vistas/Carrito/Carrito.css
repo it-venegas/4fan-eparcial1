@@ -1,0 +1,46 @@
+/* Estilos propios de la vista Carrito */
+
+.txtCarrito {
+    text-align: center;
+    color: var(--verde-oscuro);
+}
+
+.sctCarrito {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.filaTitulo {
+    font-weight: bold;
+}
+
+.resumen {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.total {
+    font-weight: bold;
+    color: var(--verde-oscuro);
+    font-size: 20px;
+}
+
+.botonFinalizar {
+    background-color: var(--verde);
+    color: #ffffff;
+}
+
+.botonFinalizar:hover {
+    background-color: var(--verde-oscuro);
+    color: #ffffff;
+}
+
+.btnSeguir {
+    color: var(--verde-oscuro);
+}
+
+@media (max-width: 576px) {
+    .resumen {
+        text-align: center;
+    }
+}

@@ -1,0 +1,54 @@
+/* ============================================================
+   Huerto Hogar - Estilos globales
+
+   Aqui viven la paleta, las tipografias y lo que comparten todas
+   las vistas. Cada vista y cada componente tiene ademas su propio
+   archivo CSS con lo que solo le corresponde a el.
+   ============================================================ */
+
+:root {
+    /* Paleta definida en el caso HuertoHogar */
+    --fondo: #f7f7f7;
+    --verde: #2e8b57;
+    --verde-oscuro: #1f6340;
+    --mostaza: #ffd700;
+    --marron: #8b4513;
+    --texto: #333333;
+    --texto-suave: #666666;
+
+    --fuente-texto: "Montserrat", sans-serif;
+    --fuente-titulo: "Playfair Display", serif;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: var(--fuente-texto);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--fuente-titulo);
+    color: var(--marron);
+}
+
+/* Botones verdes de la marca, usados en varias vistas */
+.botonVerde {
+    background-color: var(--verde);
+    color: #ffffff;
+}
+
+.botonVerde:hover {
+    background-color: var(--verde-oscuro);
+    color: #ffffff;
+}
+
+.textoAyuda {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+    font-weight: 400;
+}

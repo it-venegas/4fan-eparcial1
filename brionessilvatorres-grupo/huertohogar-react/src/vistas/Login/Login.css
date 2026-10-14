@@ -1,0 +1,35 @@
+/* Estilos propios de la vista Login */
+
+.txtLogin {
+    text-align: center;
+    color: var(--verde-oscuro);
+}
+
+/*
+   La version anterior usaba position: absolute, lo que sacaba la
+   caja del flujo de la pagina. Aqui se centra con margin, que
+   funciona bien en cualquier tamano de pantalla.
+*/
+.sctLogin {
+    border: 1px solid #e0dcd3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto 50px;
+}
+
+.botonLogin {
+    color: #f7f7f7;
+    background-color: var(--verde);
+}
+
+.botonLogin:hover {
+    color: #ffffff;
+    background-color: var(--verde-oscuro);
+}
+
+.btnRegis {
+    color: var(--verde-oscuro);
+}

@@ -1,0 +1,38 @@
+/* Estilos propios de las filas del carrito */
+
+.filaCarrito td {
+    vertical-align: middle;
+}
+
+.imgCarrito {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cantidadCarrito {
+    width: 80px;
+}
+
+.botonQuitar {
+    background-color: #fbeae8;
+    color: #c0392b;
+    border: 1px solid #e8c4bf;
+}
+
+.botonQuitar:hover {
+    background-color: #c0392b;
+    color: #ffffff;
+}
+
+@media (max-width: 576px) {
+    .imgCarrito {
+        width: 42px;
+        height: 42px;
+    }
+
+    .filaCarrito td {
+        font-size: 0.85rem;
+    }
+}
